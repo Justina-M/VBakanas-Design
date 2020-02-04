@@ -1,0 +1,58 @@
+.social-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 10;
+    transition: all 0.3s;
+    padding-top: 5rem;
+
+    &__container {
+        max-width: 120rem;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 1200px) {
+            max-width: 85vw; 
+        }
+    }
+
+    &__logo {
+        float: left;
+        padding: 2rem 0 2rem 0;
+    }
+
+    &__buttons {
+        float: right;
+        padding: 2.2rem 0 2rem 0;
+    }
+
+    &__button-list {
+        list-style: none;
+
+        &-item {
+            float: left;
+            margin-left: 0.5rem;
+            font-size: 3.2rem;
+            text-decoration: none;
+            text-align: center;
+
+            &--link {
+                padding: 1rem;
+                color: $color-social-bar-icon;
+                transition: 0.2s;
+
+                &:hover {
+                    color: $color-social-bar-icon-hover;
+                }
+            }
+        }
+    }
+
+    &-bg {
+        background-color: rgba($color-social-bar-bg, 0.75);
+        backdrop-filter: blur(1rem);
+        padding-top: 0;
+    }
+}
+

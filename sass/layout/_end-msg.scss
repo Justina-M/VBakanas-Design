@@ -1,0 +1,12 @@
+.end-msg {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 10rem 0 13rem 0;
+    text-align: center;
+    color: $color-end-msg;
+
+    &__emoji {
+        width: 3.2rem;
+        margin-left: 1.2rem;
+    }
+}

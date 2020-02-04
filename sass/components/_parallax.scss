@@ -1,0 +1,20 @@
+.parallax-bg {
+    background: url("../img/1920-header-bg.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+
+.parallax-hero {
+    background: url("../img/hero-img.png") no-repeat 85% 100%;
+    background-size: 87vh;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
