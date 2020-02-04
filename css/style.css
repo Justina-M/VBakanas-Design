@@ -337,4 +337,5 @@ h2 {
   .social-bar-bg {
     background-color: rgba(26, 14, 23, 0.75);
     backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
     padding-top: 0; }
