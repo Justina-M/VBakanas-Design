@@ -10,6 +10,14 @@
         @media only screen and (max-width: 1200px) {
             max-width: 85vw; 
         }
+
+        @media only screen and (max-width: 768px) {
+            max-width: 92vw; 
+        }
+
+        @media only screen and (max-width: 576px) {
+            padding-top: 1rem; 
+        }
     }
 
     &__heading-wrapper {
@@ -20,8 +28,16 @@
         float: left;
         color: $color-section-heading;
 
+        @media only screen and (max-width: 576px) {
+            width: 50%; 
+        }
+
         &--main {
             padding-bottom: 0.9rem;
+
+            @media only screen and (max-width: 576px) {
+                padding-bottom: 0.5rem;
+            }
         }
 
         &--desc {
@@ -34,6 +50,24 @@
     &__button {
         float: right;
         padding-top: 1rem;
+
+        @media only screen and (max-width: 768px) {
+            padding-top: 0;
+            // display: flex;
+            // flex-flow: column nowrap;
+
+            & a {
+                // flex-basis: auto;
+                display: block;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    &__no-button {
+        @media only screen and (max-width: 576px) {
+            width: 100%; 
+        }
     }
 
     &__gallery {
@@ -42,11 +76,23 @@
         justify-content: space-between;
         margin-top: 3rem;
 
+        @media only screen and (max-width: 576px) {
+            margin-top: 1.2rem;
+        }
+
         &--item-wrapper {
             flex-basis: 31.7%;
             margin-bottom: calc(2% * 120 / 100);
             // -webkit-filter: drop-shadow(0 1.5rem 3rem rgba(0, 0, 0, 0.2));
             // filter: drop-shadow(0 1.5rem 3rem rgba(0, 0, 0, 0.2));
+
+            @media only screen and (max-width: 768px) {
+                flex-basis: 48.5%; 
+            }
+
+            @media only screen and (max-width: 576px) {
+                flex-basis: 100%;
+            }
         }
 
         &--item {
@@ -55,6 +101,10 @@
             position: relative;
             -webkit-clip-path: inset(0 round 2rem);
             clip-path: inset(0 round 2rem);
+
+            @media only screen and (max-width: 576px) {
+                width: 100%;
+            }
 
             & img {
                 display: block;

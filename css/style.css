@@ -39,11 +39,20 @@ h1 {
   font-size: 12.3rem;
   font-weight: bold;
   letter-spacing: -4px; }
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 10rem; } }
+  @media only screen and (max-width: 576px) {
+    h1 {
+      font-size: 7rem; } }
 
 h2 {
   font-size: 3.2rem;
   font-weight: bold;
   letter-spacing: -0.5px; }
+  @media only screen and (max-width: 768px) {
+    h2 {
+      font-size: 2.4rem; } }
 
 .button {
   font-size: 1.6rem;
@@ -54,6 +63,9 @@ h2 {
   color: #fff;
   border-radius: 1.8rem;
   transition: all 0.3s; }
+  @media only screen and (max-width: 576px) {
+    .button {
+      font-size: 1.45rem; } }
   .button-header {
     background-color: #c22f15; }
     .button-header:hover {
@@ -144,6 +156,21 @@ h2 {
   padding: 10rem 0 13rem 0;
   text-align: center;
   color: #343434; }
+  @media only screen and (max-width: 1200px) {
+    .end-msg h1 {
+      font-size: 8rem;
+      line-height: 8rem;
+      padding-bottom: 3rem; } }
+  @media only screen and (max-width: 576px) {
+    .end-msg {
+      max-width: 90vw; }
+      .end-msg h1 {
+        font-size: 6rem;
+        line-height: 6rem;
+        padding-bottom: 3rem; }
+      .end-msg h2 {
+        max-width: 80vw;
+        margin: 0 auto; } }
   .end-msg__emoji {
     width: 3.2rem;
     margin-left: 1.2rem; }
@@ -171,6 +198,11 @@ h2 {
       color: #fff;
       font-size: 1.2rem;
       letter-spacing: -0.21px; }
+      @media only screen and (max-width: 576px) {
+        .footer__container--copyright {
+          text-align: right;
+          font-size: 1.1rem;
+          width: 50%; } }
 
 .header {
   position: absolute;
@@ -189,14 +221,20 @@ h2 {
     left: 0;
     top: calc(50% - 6.6rem);
     transform: translateY(-50%); }
+    @media only screen and (max-width: 576px) {
+      .header-content {
+        max-width: 85vw; } }
     .header-content__greeting--hi {
-      font-size: 3.2rem;
+      display: inline-block;
       font-weight: bold;
       letter-spacing: -0.5px;
       color: #fff;
       margin-right: 1.1rem; }
     .header-content__greeting--hand img {
       width: 3.8rem; }
+      @media only screen and (max-width: 768px) {
+        .header-content__greeting--hand img {
+          width: 3rem; } }
     .header-content:hover .header-content__greeting--hand img {
       animation: handWave 0.4s ease-in-out 2; }
 
@@ -221,6 +259,10 @@ h2 {
       margin-top: 2.9rem; }
       .header-content__description p:first-child {
         padding-bottom: 2.4rem; }
+      @media only screen and (max-width: 576px) {
+        .header-content__description {
+          width: 100%;
+          font-size: 1.5rem; } }
   .header__button {
     margin-top: 3rem; }
 
@@ -238,13 +280,25 @@ h2 {
     @media only screen and (max-width: 1200px) {
       .section__container {
         max-width: 85vw; } }
+    @media only screen and (max-width: 768px) {
+      .section__container {
+        max-width: 92vw; } }
+    @media only screen and (max-width: 576px) {
+      .section__container {
+        padding-top: 1rem; } }
   .section__heading-wrapper {
     overflow: hidden; }
   .section__heading {
     float: left;
     color: #343434; }
+    @media only screen and (max-width: 576px) {
+      .section__heading {
+        width: 50%; } }
     .section__heading--main {
       padding-bottom: 0.9rem; }
+      @media only screen and (max-width: 576px) {
+        .section__heading--main {
+          padding-bottom: 0.5rem; } }
     .section__heading--desc {
       font-size: 1.6rem;
       letter-spacing: -0.3px;
@@ -252,20 +306,41 @@ h2 {
   .section__button {
     float: right;
     padding-top: 1rem; }
+    @media only screen and (max-width: 768px) {
+      .section__button {
+        padding-top: 0; }
+        .section__button a {
+          display: block;
+          margin-bottom: 1rem; } }
+  @media only screen and (max-width: 576px) {
+    .section__no-button {
+      width: 100%; } }
   .section__gallery {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     margin-top: 3rem; }
+    @media only screen and (max-width: 576px) {
+      .section__gallery {
+        margin-top: 1.2rem; } }
     .section__gallery--item-wrapper {
       flex-basis: 31.7%;
       margin-bottom: calc(2% * 120 / 100); }
+      @media only screen and (max-width: 768px) {
+        .section__gallery--item-wrapper {
+          flex-basis: 48.5%; } }
+      @media only screen and (max-width: 576px) {
+        .section__gallery--item-wrapper {
+          flex-basis: 100%; } }
     .section__gallery--item {
       display: inline-block;
       text-decoration: none;
       position: relative;
       -webkit-clip-path: inset(0 round 2rem);
       clip-path: inset(0 round 2rem); }
+      @media only screen and (max-width: 576px) {
+        .section__gallery--item {
+          width: 100%; } }
       .section__gallery--item img {
         display: block;
         width: 100%;
@@ -334,6 +409,6 @@ h2 {
           color: #fff; }
   .social-bar-bg {
     background-color: rgba(26, 14, 23, 0.75);
-    backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
     padding-top: 0; }

@@ -8,6 +8,10 @@
     border-radius: 1.8rem;
     transition: all 0.3s;
 
+    @media only screen and (max-width: 576px) {
+        font-size: 1.45rem; 
+    }
+
     &-header {
         background-color: $color-btn-header-bg;
 

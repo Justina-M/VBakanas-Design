@@ -18,10 +18,14 @@
         top: calc(50% - 6.6rem);
         transform: translateY(-50%);
 
+        @media only screen and (max-width: 576px) {
+            max-width: 85vw;
+        }
+
         &__greeting {
 
             &--hi {
-                font-size: 3.2rem;
+                display: inline-block;
                 font-weight: bold;
                 letter-spacing: -0.5px;
                 color: $color-header-text;
@@ -30,6 +34,10 @@
 
             &--hand img {
                 width: 3.8rem;
+
+                @media only screen and (max-width: 768px) {
+                    width: 3rem; 
+                }
             }
         }
 
@@ -59,6 +67,11 @@
 
             & p:first-child {
                 padding-bottom: 2.4rem;
+            }
+
+            @media only screen and (max-width: 576px) {
+                width: 100%;
+                font-size: 1.5rem; 
             }
         }
     }

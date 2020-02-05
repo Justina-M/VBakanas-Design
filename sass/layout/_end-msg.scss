@@ -5,6 +5,29 @@
     text-align: center;
     color: $color-end-msg;
 
+    @media only screen and (max-width: 1200px) {
+        & h1 {
+            font-size: 8rem;
+            line-height: 8rem;
+            padding-bottom: 3rem;
+        } 
+    }
+
+    @media only screen and (max-width: 576px) {
+        max-width: 90vw;
+
+        & h1 {
+            font-size: 6rem;
+            line-height: 6rem;
+            padding-bottom: 3rem;
+        } 
+
+        & h2 {
+            max-width: 80vw;
+            margin: 0 auto;
+        }
+    }
+
     &__emoji {
         width: 3.2rem;
         margin-left: 1.2rem;
