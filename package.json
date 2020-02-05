@@ -6,12 +6,17 @@
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass"
+    "start": "npm-run-all --parallel devserver watch:sass",
+
+    "compile:sass": "node-sass sass/main.scss css/style-without-prefix.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style-without-prefix.css -o css/style.css"
   },
   "author": "Justina M",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.7.4",
     "node-sass": "^4.13.0",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0"
   }
 }
