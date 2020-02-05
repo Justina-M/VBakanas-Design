@@ -5,11 +5,20 @@ window.onload = function() {
         // *******************    STICKY SOCIAL-BAR    *******************
         var socialBar = document.getElementById("social-bar");
 
-        if (window.pageYOffset) {
-            socialBar.classList.add("social-bar-bg");
-        } else {
-            socialBar.classList.remove("social-bar-bg");
+        function addRemoveSocialBar(media769px) {
+            if (media769px.matches) {
+                if (window.pageYOffset) {
+                    socialBar.classList.add("social-bar-bg");
+                } else {
+                    socialBar.classList.remove("social-bar-bg");
+                }
+            }
         }
+
+        var media769px = window.matchMedia("(min-width: 769px)");
+        addRemoveSocialBar(media769px);
+        media769px.addListener(addRemoveSocialBar);
+        
 
         // *******************    PARALLAX HERO IMG    *******************
         var parallaxElementHero = document.querySelector('.parallax-hero');

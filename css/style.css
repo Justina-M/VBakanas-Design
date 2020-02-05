@@ -106,7 +106,7 @@ h2 {
   z-index: -1; }
 
 .parallax-hero {
-  background: url("../img/hero-img.png") no-repeat 85% 100%;
+  background: url("../img/hero-img.png") no-repeat 90% 100%;
   background-size: 87vh;
   height: 100vh;
   position: absolute;
@@ -381,6 +381,10 @@ h2 {
   z-index: 10;
   transition: all 0.3s;
   padding-top: 5rem; }
+  @media only screen and (max-width: 768px) {
+    .social-bar {
+      position: absolute;
+      padding-top: 1rem; } }
   .social-bar__container {
     max-width: 120rem;
     margin: 0 auto; }
@@ -390,9 +394,15 @@ h2 {
   .social-bar__logo {
     float: left;
     padding: 2rem 0 2rem 0; }
+    @media only screen and (max-width: 576px) {
+      .social-bar__logo img {
+        max-width: 30vw; } }
   .social-bar__buttons {
     float: right;
     padding: 2.2rem 0 2rem 0; }
+    @media only screen and (max-width: 768px) {
+      .social-bar__buttons {
+        padding-top: 1.6rem; } }
   .social-bar__button-list {
     list-style: none; }
     .social-bar__button-list-item {
@@ -401,6 +411,12 @@ h2 {
       font-size: 3.2rem;
       text-decoration: none;
       text-align: center; }
+      @media only screen and (max-width: 576px) {
+        .social-bar__button-list-item {
+          font-size: 2.8rem; } }
+      @media only screen and (max-width: 375px) {
+        .social-bar__button-list-item {
+          font-size: 2.2rem; } }
       .social-bar__button-list-item--link {
         padding: 1rem;
         color: #c22f15;
