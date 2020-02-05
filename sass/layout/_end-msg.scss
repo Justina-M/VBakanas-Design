@@ -13,6 +13,10 @@
         } 
     }
 
+    @media only screen and (max-width: 768px) {
+        padding: 6vh 0 8vh 0;
+    }
+
     @media only screen and (max-width: 576px) {
         max-width: 90vw;
 
@@ -25,11 +29,16 @@
         & h2 {
             max-width: 80vw;
             margin: 0 auto;
+            line-height: 3.5rem;
         }
     }
 
     &__emoji {
         width: 3.2rem;
         margin-left: 1.2rem;
+
+        @media only screen and (max-width: 576px) {
+            width: 2.1rem;
+        }
     }
 }

@@ -1,8 +1,12 @@
 .scroll-down-arrow {
     position: absolute;
-    bottom: 10rem;
+    bottom: 6rem;
     left: 50%;
     animation: arrowDown 2s ease infinite;
+
+    @media only screen and (max-width: 576px) {
+        max-width: 85vw;
+    }
 
     @keyframes arrowDown {
         0% {transform: translateY(-2rem); opacity: 0;}
