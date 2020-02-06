@@ -109,6 +109,10 @@
             & img {
                 display: block;
                 width: 100%;
+                -webkit-transition: transform 0.5s;
+                -moz-transition: transform 0.5s;
+                -ms-transition: transform 0.5s;
+                -o-transition: transform 0.5s;
                 transition: transform 0.5s;
             }
         }
@@ -123,6 +127,10 @@
             display: flex;
             align-items: flex-end;
             opacity: 0;
+            -webkit-transition: opacity 0.3s;
+            -moz-transition: opacity 0.3s;
+            -ms-transition: opacity 0.3s;
+            -o-transition: opacity 0.3s;
             transition: opacity 0.3s;
 
             &-text {
@@ -133,6 +141,10 @@
                 color: $color-caption;
                 padding: 0 1.5rem 1.5rem 1.5rem;
                 transform: translateY(100%);
+                -webkit-transition: transform 0.3s;
+                -moz-transition: transform 0.3s;
+                -ms-transition: transform 0.3s;
+                -o-transition: transform 0.3s;
                 transition: transform 0.3s;
             }
         }

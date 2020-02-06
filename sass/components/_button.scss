@@ -13,20 +13,33 @@
     }
 
     &-header {
-        background-color: $color-btn-header-bg;
+
+        &:link, &:visited {
+            background-color: $color-btn-header-bg;
+        }
 
         &:hover {
             background-color: $color-btn-header-bg-hover;
         }
+
+        &:active {
+            background-color: $color-btn-header-bg;
+        }
     }
 
     &-main {
-        background-color: $color-btn-main-bg;
         margin-left: 1.5rem;
+
+        &:link, &:visited {
+            background-color: $color-btn-main-bg;
+        }
 
         &:hover {
             background-color: $color-btn-main-bg-hover;
+        }
 
+        &:active {
+            background-color: $color-btn-main-bg;
         }
     }
 
