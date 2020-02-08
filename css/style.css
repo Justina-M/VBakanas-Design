@@ -458,12 +458,9 @@ h2 {
           font-size: 2.2rem; } }
       .social-bar__button-list-item--link {
         padding: 1rem;
-        color: #c22f15;
         transition: 0.2s; }
-        .social-bar__button-list-item--link:hover {
-          color: #c22f15; }
         .social-bar__button-list-item--link:link, .social-bar__button-list-item--link:visited {
-          background-color: #006fff; }
+          color: #c22f15; }
         .social-bar__button-list-item--link:hover {
           color: #fff; }
         .social-bar__button-list-item--link:active {
