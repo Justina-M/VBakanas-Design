@@ -146,14 +146,28 @@
                 -ms-transition: transform 0.3s;
                 -o-transition: transform 0.3s;
                 transition: transform 0.3s;
+
+                @media (hover: none) and (pointer: coarse) {
+                    transform: translateY(0%);
+                    -webkit-transition: transform 0s;
+                    -moz-transition: transform 0s;
+                    -ms-transition: transform 0s;
+                    -o-transition: transform 0s;
+                    transition: transform 0s;
+
+                    @keyframes textMoveIn {
+                        0% {transform: translateY(100%);}
+                        100% {transform: translateY(0%);}
+                    }
+                }
             }
         }
 
         &--item-wrapper:hover &--item img {
             transform: scale(1.1);
 
-            @media only screen and (max-width: 576px) {
-                transform: scale(1);   
+            @media (hover: none) and (pointer: coarse) {
+                transform: scale(1);
             }
         }
 
@@ -163,6 +177,10 @@
 
         &--item-wrapper:hover &--caption-text {
             transform: translateY(0%);
+
+            @media (hover: none) and (pointer: coarse) {
+                animation: textMoveIn 0.3s;
+            }
         }
     }
 }
