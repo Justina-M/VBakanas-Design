@@ -25,6 +25,12 @@
         &:active {
             background-color: $color-btn-header-bg;
         }
+
+        @media (hover: none) and (pointer: coarse) {
+            &:link, &:visited, &:hover, &:active {
+                background-color: $color-btn-header-bg;
+            }
+        }
     }
 
     &-main {
@@ -40,6 +46,12 @@
 
         &:active {
             background-color: $color-btn-main-bg;
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+            &:link, &:visited, &:hover, &:active {
+                background-color: $color-btn-main-bg;
+            }
         }
     }
 

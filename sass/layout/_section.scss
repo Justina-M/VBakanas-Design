@@ -151,6 +151,10 @@
 
         &--item-wrapper:hover &--item img {
             transform: scale(1.1);
+
+            @media only screen and (max-width: 576px) {
+                transform: scale(1);   
+            }
         }
 
         &--item-wrapper:hover &--caption {

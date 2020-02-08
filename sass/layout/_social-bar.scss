@@ -67,7 +67,25 @@
                 transition: 0.2s;
 
                 &:hover {
+                    color: $color-social-bar-icon;
+                }
+
+                &:link, &:visited {
+                    background-color: $color-btn-main-bg;
+                }
+        
+                &:hover {
                     color: $color-social-bar-icon-hover;
+                }
+        
+                &:active {
+                    color: $color-social-bar-icon;
+                }
+        
+                @media (hover: none) and (pointer: coarse) {
+                    &:link, &:visited, &:hover, &:active {
+                        color: $color-social-bar-icon;
+                    }
                 }
             }
         }

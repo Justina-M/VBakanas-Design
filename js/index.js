@@ -51,4 +51,9 @@ window.onload = function() {
         } 
     }
 
+    // var userAgent = navigator.userAgent.toString().toLowerCase();
+    // if(userAgent.indexOf('crios') != -1) { 
+    //     alert('you are using chrome for ios');
+    // }
+
 }
