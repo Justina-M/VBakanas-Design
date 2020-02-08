@@ -72,6 +72,9 @@ h2 {
     background-color: #ce5944; }
   .button-header:active {
     background-color: #c22f15; }
+  @media (hover: none) and (pointer: coarse) {
+    .button-header:hover {
+      background-color: #c22f15; } }
   .button-main {
     margin-left: 1.5rem; }
     .button-main:link, .button-main:visited {
@@ -80,6 +83,9 @@ h2 {
       background-color: #338cff; }
     .button-main:active {
       background-color: #006fff; }
+    @media (hover: none) and (pointer: coarse) {
+      .button-main:hover {
+        background-color: #006fff; } }
   .button__arrow-top-right {
     margin-left: 0.5rem;
     display: inline-block;
@@ -455,7 +461,16 @@ h2 {
         color: #c22f15;
         transition: 0.2s; }
         .social-bar__button-list-item--link:hover {
+          color: #c22f15; }
+        .social-bar__button-list-item--link:link, .social-bar__button-list-item--link:visited {
+          background-color: #006fff; }
+        .social-bar__button-list-item--link:hover {
           color: #fff; }
+        .social-bar__button-list-item--link:active {
+          color: #c22f15; }
+        @media (hover: none) and (pointer: coarse) {
+          .social-bar__button-list-item--link:hover {
+            color: #c22f15; } }
   .social-bar-bg {
     background-color: rgba(26, 14, 23, 0.75);
     -webkit-backdrop-filter: blur(1rem);

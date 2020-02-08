@@ -83,7 +83,7 @@
                 }
         
                 @media (hover: none) and (pointer: coarse) {
-                    &:link, &:visited, &:hover, &:active {
+                    &:hover {
                         color: $color-social-bar-icon;
                     }
                 }
